@@ -36,7 +36,7 @@ public class parser extends java_cup.runtime.lr_parser {
     "\000\002\003\005\000\002\003\005\000\002\003\005\000" +
     "\002\003\005\000\002\003\005\000\002\003\005\000\002" +
     "\003\005\000\002\003\005\000\002\003\005\000\002\003" +
-    "\005\000\002\003\004\000\002\003\005\000\002\003\003" +
+    "\004\000\002\003\004\000\002\003\005\000\002\003\003" +
     "\000\002\003\003\000\002\003\003" });
 
   /** Access to production table. */
@@ -45,84 +45,83 @@ public class parser extends java_cup.runtime.lr_parser {
   /** Parse-action table. */
   protected static final short[][] _action_table = 
     unpackFromStrings(new String[] {
-    "\000\050\000\014\004\004\005\011\006\007\010\005\014" +
-    "\006\001\002\000\042\002\uffef\007\uffef\010\uffef\011\uffef" +
-    "\012\uffef\013\uffef\015\uffef\016\uffef\017\uffef\020\uffef\021" +
-    "\uffef\022\uffef\023\uffef\024\uffef\025\uffef\026\uffef\001\002" +
-    "\000\014\004\004\005\011\006\007\010\005\014\006\001" +
-    "\002\000\014\004\004\005\011\006\007\010\005\014\006" +
-    "\001\002\000\042\002\uffed\007\uffed\010\uffed\011\uffed\012" +
-    "\uffed\013\uffed\015\uffed\016\uffed\017\uffed\020\uffed\021\uffed" +
-    "\022\uffed\023\uffed\024\uffed\025\uffed\026\uffed\001\002\000" +
-    "\004\002\047\001\002\000\042\002\uffee\007\uffee\010\uffee" +
-    "\011\uffee\012\uffee\013\uffee\015\uffee\016\uffee\017\uffee\020" +
-    "\uffee\021\uffee\022\uffee\023\uffee\024\uffee\025\uffee\026\uffee" +
-    "\001\002\000\040\002\000\007\021\010\014\011\017\012" +
-    "\023\013\016\016\024\017\026\020\015\021\022\022\020" +
-    "\023\027\024\013\025\030\026\025\001\002\000\014\004" +
-    "\004\005\011\006\007\010\005\014\006\001\002\000\014" +
-    "\004\004\005\011\006\007\010\005\014\006\001\002\000" +
-    "\014\004\004\005\011\006\007\010\005\014\006\001\002" +
-    "\000\014\004\004\005\011\006\007\010\005\014\006\001" +
-    "\002\000\014\004\004\005\011\006\007\010\005\014\006" +
-    "\001\002\000\014\004\004\005\011\006\007\010\005\014" +
-    "\006\001\002\000\014\004\004\005\011\006\007\010\005" +
-    "\014\006\001\002\000\014\004\004\005\011\006\007\010" +
-    "\005\014\006\001\002\000\014\004\004\005\011\006\007" +
-    "\010\005\014\006\001\002\000\014\004\004\005\011\006" +
-    "\007\010\005\014\006\001\002\000\014\004\004\005\011" +
-    "\006\007\010\005\014\006\001\002\000\014\004\004\005" +
-    "\011\006\007\010\005\014\006\001\002\000\014\004\004" +
-    "\005\011\006\007\010\005\014\006\001\002\000\014\004" +
-    "\004\005\011\006\007\010\005\014\006\001\002\000\042" +
-    "\002\ufff3\007\021\010\014\011\017\012\023\013\016\015" +
-    "\ufff3\016\024\017\026\020\015\021\022\022\020\023\027" +
-    "\024\ufff3\025\ufff3\026\ufff3\001\002\000\042\002\ufff5\007" +
-    "\021\010\014\011\017\012\023\013\016\015\ufff5\016\ufff5" +
-    "\017\ufff5\020\ufff5\021\ufff5\022\ufff5\023\ufff5\024\ufff5\025" +
-    "\ufff5\026\ufff5\001\002\000\042\002\ufff9\007\021\010\014" +
-    "\011\017\012\023\013\016\015\ufff9\016\ufff9\017\ufff9\020" +
-    "\ufff9\021\ufff9\022\ufff9\023\ufff9\024\ufff9\025\ufff9\026\ufff9" +
-    "\001\002\000\042\002\ufff2\007\021\010\014\011\017\012" +
-    "\023\013\016\015\ufff2\016\024\017\026\020\015\021\022" +
-    "\022\020\023\027\024\ufff2\025\ufff2\026\ufff2\001\002\000" +
-    "\042\002\ufffa\007\021\010\014\011\017\012\023\013\016" +
-    "\015\ufffa\016\ufffa\017\ufffa\020\ufffa\021\ufffa\022\ufffa\023" +
-    "\ufffa\024\ufffa\025\ufffa\026\ufffa\001\002\000\042\002\ufffc" +
-    "\007\ufffc\010\ufffc\011\ufffc\012\ufffc\013\016\015\ufffc\016" +
-    "\ufffc\017\ufffc\020\ufffc\021\ufffc\022\ufffc\023\ufffc\024\ufffc" +
-    "\025\ufffc\026\ufffc\001\002\000\042\002\ufff7\007\021\010" +
-    "\014\011\017\012\023\013\016\015\ufff7\016\ufff7\017\ufff7" +
-    "\020\ufff7\021\ufff7\022\ufff7\023\ufff7\024\ufff7\025\ufff7\026" +
-    "\ufff7\001\002\000\042\002\uffff\007\uffff\010\uffff\011\017" +
-    "\012\023\013\016\015\uffff\016\uffff\017\uffff\020\uffff\021" +
-    "\uffff\022\uffff\023\uffff\024\uffff\025\uffff\026\uffff\001\002" +
-    "\000\042\002\ufff6\007\021\010\014\011\017\012\023\013" +
-    "\016\015\ufff6\016\ufff6\017\ufff6\020\ufff6\021\ufff6\022\ufff6" +
-    "\023\ufff6\024\ufff6\025\ufff6\026\ufff6\001\002\000\042\002" +
-    "\ufffd\007\ufffd\010\ufffd\011\ufffd\012\ufffd\013\016\015\ufffd" +
+    "\000\050\000\016\004\004\005\012\006\010\010\006\014" +
+    "\007\026\005\001\002\000\040\002\uffef\007\uffef\010\uffef" +
+    "\011\uffef\012\uffef\013\uffef\015\uffef\016\uffef\017\uffef\020" +
+    "\uffef\021\uffef\022\uffef\023\uffef\024\uffef\025\uffef\001\002" +
+    "\000\016\004\004\005\012\006\010\010\006\014\007\026" +
+    "\005\001\002\000\016\004\004\005\012\006\010\010\006" +
+    "\014\007\026\005\001\002\000\016\004\004\005\012\006" +
+    "\010\010\006\014\007\026\005\001\002\000\040\002\uffed" +
+    "\007\uffed\010\uffed\011\uffed\012\uffed\013\uffed\015\uffed\016" +
+    "\uffed\017\uffed\020\uffed\021\uffed\022\uffed\023\uffed\024\uffed" +
+    "\025\uffed\001\002\000\004\002\046\001\002\000\040\002" +
+    "\uffee\007\uffee\010\uffee\011\uffee\012\uffee\013\uffee\015\uffee" +
+    "\016\uffee\017\uffee\020\uffee\021\uffee\022\uffee\023\uffee\024" +
+    "\uffee\025\uffee\001\002\000\036\002\000\007\022\010\015" +
+    "\011\020\012\024\013\017\016\025\017\026\020\016\021" +
+    "\023\022\021\023\027\024\014\025\030\001\002\000\016" +
+    "\004\004\005\012\006\010\010\006\014\007\026\005\001" +
+    "\002\000\016\004\004\005\012\006\010\010\006\014\007" +
+    "\026\005\001\002\000\016\004\004\005\012\006\010\010" +
+    "\006\014\007\026\005\001\002\000\016\004\004\005\012" +
+    "\006\010\010\006\014\007\026\005\001\002\000\016\004" +
+    "\004\005\012\006\010\010\006\014\007\026\005\001\002" +
+    "\000\016\004\004\005\012\006\010\010\006\014\007\026" +
+    "\005\001\002\000\016\004\004\005\012\006\010\010\006" +
+    "\014\007\026\005\001\002\000\016\004\004\005\012\006" +
+    "\010\010\006\014\007\026\005\001\002\000\016\004\004" +
+    "\005\012\006\010\010\006\014\007\026\005\001\002\000" +
+    "\016\004\004\005\012\006\010\010\006\014\007\026\005" +
+    "\001\002\000\016\004\004\005\012\006\010\010\006\014" +
+    "\007\026\005\001\002\000\016\004\004\005\012\006\010" +
+    "\010\006\014\007\026\005\001\002\000\016\004\004\005" +
+    "\012\006\010\010\006\014\007\026\005\001\002\000\040" +
+    "\002\ufff3\007\022\010\015\011\020\012\024\013\017\015" +
+    "\ufff3\016\025\017\026\020\016\021\023\022\021\023\027" +
+    "\024\014\025\ufff3\001\002\000\040\002\ufff5\007\022\010" +
+    "\015\011\020\012\024\013\017\015\ufff5\016\ufff5\017\ufff5" +
+    "\020\ufff5\021\ufff5\022\ufff5\023\ufff5\024\ufff5\025\ufff5\001" +
+    "\002\000\040\002\ufff9\007\022\010\015\011\020\012\024" +
+    "\013\017\015\ufff9\016\ufff9\017\ufff9\020\ufff9\021\ufff9\022" +
+    "\ufff9\023\ufff9\024\ufff9\025\ufff9\001\002\000\040\002\ufffa" +
+    "\007\022\010\015\011\020\012\024\013\017\015\ufffa\016" +
+    "\ufffa\017\ufffa\020\ufffa\021\ufffa\022\ufffa\023\ufffa\024\ufffa" +
+    "\025\ufffa\001\002\000\040\002\ufffc\007\ufffc\010\015\011" +
+    "\ufffc\012\ufffc\013\017\015\ufffc\016\ufffc\017\ufffc\020\ufffc" +
+    "\021\ufffc\022\ufffc\023\ufffc\024\ufffc\025\ufffc\001\002\000" +
+    "\040\002\ufff7\007\022\010\015\011\020\012\024\013\017" +
+    "\015\ufff7\016\ufff7\017\ufff7\020\ufff7\021\ufff7\022\ufff7\023" +
+    "\ufff7\024\ufff7\025\ufff7\001\002\000\040\002\uffff\007\uffff" +
+    "\010\015\011\020\012\024\013\017\015\uffff\016\uffff\017" +
+    "\uffff\020\uffff\021\uffff\022\uffff\023\uffff\024\uffff\025\uffff" +
+    "\001\002\000\040\002\ufff6\007\022\010\015\011\020\012" +
+    "\024\013\017\015\ufff6\016\ufff6\017\ufff6\020\ufff6\021\ufff6" +
+    "\022\ufff6\023\ufff6\024\ufff6\025\ufff6\001\002\000\040\002" +
+    "\ufffd\007\ufffd\010\015\011\ufffd\012\ufffd\013\017\015\ufffd" +
     "\016\ufffd\017\ufffd\020\ufffd\021\ufffd\022\ufffd\023\ufffd\024" +
-    "\ufffd\025\ufffd\026\ufffd\001\002\000\042\002\ufffb\007\ufffb" +
-    "\010\ufffb\011\ufffb\012\ufffb\013\016\015\ufffb\016\ufffb\017" +
-    "\ufffb\020\ufffb\021\ufffb\022\ufffb\023\ufffb\024\ufffb\025\ufffb" +
-    "\026\ufffb\001\002\000\042\002\ufff8\007\021\010\014\011" +
-    "\017\012\023\013\016\015\ufff8\016\ufff8\017\ufff8\020\ufff8" +
-    "\021\ufff8\022\ufff8\023\ufff8\024\ufff8\025\ufff8\026\ufff8\001" +
-    "\002\000\042\002\ufffe\007\ufffe\010\ufffe\011\017\012\023" +
-    "\013\016\015\ufffe\016\ufffe\017\ufffe\020\ufffe\021\ufffe\022" +
-    "\ufffe\023\ufffe\024\ufffe\025\ufffe\026\ufffe\001\002\000\042" +
-    "\002\ufff4\007\021\010\014\011\017\012\023\013\016\015" +
-    "\ufff4\016\024\017\026\020\015\021\022\022\020\023\027" +
-    "\024\ufff4\025\ufff4\026\ufff4\001\002\000\004\002\001\001" +
-    "\002\000\040\007\021\010\014\011\017\012\023\013\016" +
-    "\015\051\016\024\017\026\020\015\021\022\022\020\023" +
-    "\027\024\013\025\030\026\025\001\002\000\042\002\ufff0" +
-    "\007\ufff0\010\ufff0\011\ufff0\012\ufff0\013\ufff0\015\ufff0\016" +
-    "\ufff0\017\ufff0\020\ufff0\021\ufff0\022\ufff0\023\ufff0\024\ufff0" +
-    "\025\ufff0\026\ufff0\001\002\000\042\002\ufff1\007\ufff1\010" +
-    "\ufff1\011\017\012\023\013\016\015\ufff1\016\ufff1\017\ufff1" +
-    "\020\ufff1\021\ufff1\022\ufff1\023\ufff1\024\ufff1\025\ufff1\026" +
-    "\ufff1\001\002" });
+    "\ufffd\025\ufffd\001\002\000\040\002\ufffb\007\ufffb\010\015" +
+    "\011\ufffb\012\ufffb\013\017\015\ufffb\016\ufffb\017\ufffb\020" +
+    "\ufffb\021\ufffb\022\ufffb\023\ufffb\024\ufffb\025\ufffb\001\002" +
+    "\000\040\002\ufff8\007\022\010\015\011\020\012\024\013" +
+    "\017\015\ufff8\016\ufff8\017\ufff8\020\ufff8\021\ufff8\022\ufff8" +
+    "\023\ufff8\024\ufff8\025\ufff8\001\002\000\040\002\ufffe\007" +
+    "\ufffe\010\015\011\ufffe\012\ufffe\013\ufffe\015\ufffe\016\ufffe" +
+    "\017\ufffe\020\ufffe\021\ufffe\022\ufffe\023\ufffe\024\ufffe\025" +
+    "\ufffe\001\002\000\040\002\ufff4\007\022\010\015\011\020" +
+    "\012\024\013\017\015\ufff4\016\025\017\026\020\016\021" +
+    "\023\022\021\023\027\024\ufff4\025\ufff4\001\002\000\004" +
+    "\002\001\001\002\000\036\007\022\010\015\011\020\012" +
+    "\024\013\017\015\050\016\025\017\026\020\016\021\023" +
+    "\022\021\023\027\024\014\025\030\001\002\000\040\002" +
+    "\ufff0\007\ufff0\010\ufff0\011\ufff0\012\ufff0\013\ufff0\015\ufff0" +
+    "\016\ufff0\017\ufff0\020\ufff0\021\ufff0\022\ufff0\023\ufff0\024" +
+    "\ufff0\025\ufff0\001\002\000\040\002\ufff1\007\ufff1\010\015" +
+    "\011\ufff1\012\ufff1\013\ufff1\015\ufff1\016\ufff1\017\ufff1\020" +
+    "\ufff1\021\ufff1\022\ufff1\023\ufff1\024\ufff1\025\ufff1\001\002" +
+    "\000\040\002\ufff2\007\022\010\015\011\020\012\024\013" +
+    "\017\015\ufff2\016\025\017\026\020\016\021\023\022\021" +
+    "\023\027\024\ufff2\025\ufff2\001\002" });
 
   /** Access to parse-action table. */
   public short[][] action_table() {return _action_table;}
@@ -130,10 +129,10 @@ public class parser extends java_cup.runtime.lr_parser {
   /** <code>reduce_goto</code> table. */
   protected static final short[][] _reduce_table = 
     unpackFromStrings(new String[] {
-    "\000\050\000\006\002\007\003\011\001\001\000\002\001" +
-    "\001\000\004\003\051\001\001\000\004\003\047\001\001" +
-    "\000\002\001\001\000\002\001\001\000\002\001\001\000" +
-    "\002\001\001\000\004\003\045\001\001\000\004\003\044" +
+    "\000\050\000\006\002\010\003\012\001\001\000\002\001" +
+    "\001\000\004\003\051\001\001\000\004\003\050\001\001" +
+    "\000\004\003\046\001\001\000\002\001\001\000\002\001" +
+    "\001\000\002\001\001\000\002\001\001\000\004\003\044" +
     "\001\001\000\004\003\043\001\001\000\004\003\042\001" +
     "\001\000\004\003\041\001\001\000\004\003\040\001\001" +
     "\000\004\003\037\001\001\000\004\003\036\001\001\000" +
@@ -230,7 +229,7 @@ class CUP$parser$actions {
               Object RESULT =null;
 		int start_valleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).left;
 		int start_valright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).right;
-		NodoC3D start_val = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
+		String start_val = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
 		RESULT = start_val;
               CUP$parser$result = parser.getSymbolFactory().newSymbol("$START",0, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -241,12 +240,13 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 1: // inicial ::= expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int expleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int expright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D exp = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String exp = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
-                        ControlC3D.agregarC3D("//Último valor: " + exp.getCad());
+                        ControlC3D.agregarC3D("//Último valor: " + exp);
+                        ControlC3D.agregarCC(ControlC3D.getV() + ": V\n" + ControlC3D.getF() + ": F\n");
                         RESULT = exp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("inicial",0, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
@@ -256,18 +256,18 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 2: // expresion ::= expresion MAS expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " + " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " + " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -276,18 +276,18 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 3: // expresion ::= expresion MENOS expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " - " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " - " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -296,18 +296,18 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 4: // expresion ::= expresion MULT expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " * " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " * " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -316,18 +316,18 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 5: // expresion ::= expresion DIV expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " / " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " / " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -336,18 +336,18 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 6: // expresion ::= expresion POT expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " ^ " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " ^ " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -356,18 +356,26 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 7: // expresion ::= expresion IGUAL expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " == " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " == " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+
+                        String temp2 = ControlC3D.generaEtiqueta();
+                        String temp3 = ControlC3D.generaEtiqueta();
+                        ControlC3D.agregarV(temp2);
+                        ControlC3D.agregarF(temp3);
+                        String cc = "if " + izq + " == " + der + " goto " + temp2 + "\n goto " + temp3 + "\n";
+                        ControlC3D.agregarCC(cc);
+
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -376,18 +384,26 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 8: // expresion ::= expresion DIFERENTE expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " != " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " != " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+
+                        String temp2 = ControlC3D.generaEtiqueta();
+                        String temp3 = ControlC3D.generaEtiqueta();
+                        ControlC3D.agregarV(temp2);
+                        ControlC3D.agregarF(temp3);
+                        String cc = "if " + izq + " != " + der + " goto " + temp2 + "\n goto " + temp3 + "\n";
+                        ControlC3D.agregarCC(cc);
+
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -396,18 +412,26 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 9: // expresion ::= expresion MAYOR_QUE expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " > " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " > " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+
+                        String temp2 = ControlC3D.generaEtiqueta();
+                        String temp3 = ControlC3D.generaEtiqueta();
+                        ControlC3D.agregarV(temp2);
+                        ControlC3D.agregarF(temp3);
+                        String cc = "if " + izq + " > " + der + " goto " + temp2 + "\n goto " + temp3 + "\n";
+                        ControlC3D.agregarCC(cc);
+
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -416,18 +440,26 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 10: // expresion ::= expresion MENOR_QUE expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " < " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " < " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+
+                        String temp2 = ControlC3D.generaEtiqueta();
+                        String temp3 = ControlC3D.generaEtiqueta();
+                        ControlC3D.agregarV(temp2);
+                        ControlC3D.agregarF(temp3);
+                        String cc = "if " + izq + " < " + der + " goto " + temp2 + "\n goto " + temp3 + "\n";
+                        ControlC3D.agregarCC(cc);
+
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -436,18 +468,26 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 11: // expresion ::= expresion MAYOR_IGUAL expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " >= " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " >= " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+
+                        String temp2 = ControlC3D.generaEtiqueta();
+                        String temp3 = ControlC3D.generaEtiqueta();
+                        ControlC3D.agregarV(temp2);
+                        ControlC3D.agregarF(temp3);
+                        String cc = "if " + izq + " >= " + der + " goto " + temp2 + "\n goto " + temp3 + "\n";
+                        ControlC3D.agregarCC(cc);
+
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -456,18 +496,26 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 12: // expresion ::= expresion MENOR_IGUAL expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " <= " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " <= " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+
+                        String temp2 = ControlC3D.generaEtiqueta();
+                        String temp3 = ControlC3D.generaEtiqueta();
+                        ControlC3D.agregarV(temp2);
+                        ControlC3D.agregarF(temp3);
+                        String cc = "if " + izq + " <= " + der + " goto " + temp2 + "\n goto " + temp3 + "\n";
+                        ControlC3D.agregarCC(cc);
+
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -476,18 +524,33 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 13: // expresion ::= expresion AND expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " && " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " && " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        //RESULT = temp;
+                        String label = ControlC3D.Etiqueta2();
+                        ControlC3D.F(label);
+                        String cc = "";
+                        String aux = izq.substring(0, 1);
+                        if(aux.equals("L")){
+                            ControlC3D.V(izq);
+                            cc = izq + ": " + der + "\n";
+                        }
+                        else{
+                            cc = izq + "\n" + ControlC3D.Etiqueta4() + ": " + der + "\n";
+                            ControlC3D.V(ControlC3D.Etiqueta4());
+                        }
+                        ControlC3D.agregarC3D(cc);
+                        RESULT = label;
+
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -496,55 +559,69 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 14: // expresion ::= expresion OR expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
 		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+		String izq = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " || " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + izq + " || " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        //RESULT = temp;
+
+                        String label = ControlC3D.Etiqueta1();
+                        ControlC3D.F(label);
+                        ControlC3D.agregarF(ControlC3D.LastEtiqueta());
+                        ControlC3D.V(label);
+                        String cc = "";
+                        String aux = izq.substring(0, 1);
+                        if(aux.equals("L")){
+                            ControlC3D.F(izq);
+                            cc = izq + ": " + der + "\n";
+                        }
+                        else{
+                            cc = izq + "\n" + ControlC3D.Etiqueta3() + ": " + der + "\n";
+                            ControlC3D.F(ControlC3D.Etiqueta3());
+                        }
+                        ControlC3D.agregarC3D(cc);
+                        RESULT = label;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 15: // expresion ::= expresion NOT expresion 
+          case 15: // expresion ::= NOT expresion 
             {
-              NodoC3D RESULT =null;
-		int izqleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).left;
-		int izqright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)).right;
-		NodoC3D izq = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-2)).value;
+              String RESULT =null;
 		int derleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int derright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D der = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String der = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = " + izq.getCad() + " ! " + der.getCad() + ";\n";
+                        String c3d = temp + " = " + " ! " + der + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        RESULT = temp;
                     
-              CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
+              CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 16: // expresion ::= MENOS expresion 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int expleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int expright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
-		NodoC3D exp = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
+		String exp = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
 		 
                         String temp = ControlC3D.generaTemp();
-                        String c3d = temp + " = - " + exp.getCad() + ";\n";
+                        String c3d = temp + " = - " + exp + ";\n";
                         ControlC3D.agregarC3D(c3d);
-                        RESULT = new NodoC3D(temp); 
+                        RESULT = temp;
                     
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -553,10 +630,10 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 17: // expresion ::= PAR_IZQ expresion PAR_DER 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int expleft = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).left;
 		int expright = ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-1)).right;
-		NodoC3D exp = (NodoC3D)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
+		String exp = (String)((java_cup.runtime.Symbol) CUP$parser$stack.elementAt(CUP$parser$top-1)).value;
 		 RESULT = exp; 
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.elementAt(CUP$parser$top-2)), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
@@ -565,11 +642,11 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 18: // expresion ::= ID 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int idleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int idright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
 		String id = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
-		 RESULT = new NodoC3D(id); 
+		 RESULT = id; 
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
@@ -577,11 +654,11 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 19: // expresion ::= ENTERO 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int enteroleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int enteroright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
 		String entero = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
-		 RESULT = new NodoC3D(entero); 
+		 RESULT = entero; 
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
@@ -589,11 +666,11 @@ class CUP$parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 20: // expresion ::= DECIMAL 
             {
-              NodoC3D RESULT =null;
+              String RESULT =null;
 		int decimalleft = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).left;
 		int decimalright = ((java_cup.runtime.Symbol)CUP$parser$stack.peek()).right;
 		String decimal = (String)((java_cup.runtime.Symbol) CUP$parser$stack.peek()).value;
-		 RESULT = new NodoC3D(decimal); 
+		 RESULT = decimal; 
               CUP$parser$result = parser.getSymbolFactory().newSymbol("expresion",1, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
